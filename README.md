@@ -150,17 +150,6 @@ public class LoginTest  {
 
 ``` mvn test```
 
-![](img/result3.PNG)
-
-
-**report**
-
-![](img/result2.PNG)
-
-
-# other
-* [Chinese](chinese.md)
-
 
 
 
