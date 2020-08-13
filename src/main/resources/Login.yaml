@@ -1,0 +1,15 @@
+testcase:
+    - element_info: .//*[@id='credential']
+      find_type: xpath
+      operate_type: send_keys
+      text: SQ
+    - element_info: password
+      find_type: id
+      operate_type: send_keys
+      text: 4HOZvp2y
+    - element_info: //*[@id="account-login-form"]/nz-form-item[3]/nz-form-control/div/span/button
+      find_type: xpath
+      operate_type: click
+check:
+      - element_info: /html/body/app-root/app-routes/app-authorized/app-index/nz-layout/nz-header/app-header/div/div/a[5]/i
+        find_type: xpath

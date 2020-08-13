@@ -1,0 +1,24 @@
+testcase:
+    - element_info: /html/body/app-root/app-routes/app-authorized/app-index/nz-layout/app-side-nav/div/div[1]/div[1]/ul/li[1]/a/span
+      find_type: xpath
+      operate_type: click
+    - element_info: //*[@id="body"]/nz-spin/div/app-product-management/div/div[1]/app-product-search-bar/div/div[1]/nz-input-group/input
+      find_type: xpath
+      operate_type: send_keys
+      text: ZW
+    - element_info: //*[@id="body"]/nz-spin/div/app-product-management/div/div[1]/app-product-search-bar/div/div[2]/button[1]
+      find_type: xpath
+      operate_type: click
+    - element_info: //*[@id="body"]/nz-spin/div/app-product-management/div/div[2]/app-product-list/nz-spin/div/div/div/nz-table/nz-spin/div/div/div/div/table/tbody/tr[1]/td[7]/a[2]
+      find_type: xpath
+      operate_type: click
+    - element_info: //*[@id="body"]/nz-spin/div/app-picture-list/div/div/div[2]/div[1]/nz-select[2]/div
+      find_type: xpath
+      operate_type: click
+    - element_info:  //*[@id="cdk-overlay-11"]/div/div/ul/li[2]
+      find_type: xpath
+      operate_type: click
+
+check:
+      - element_info: //*[@id="body"]/nz-spin/div/app-picture-list/div/nz-spin/div/div/app-picture-sketch[1]/div/div
+        find_type: xpath

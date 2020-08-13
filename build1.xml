@@ -1,0 +1,18 @@
+<project name="sh_selenium_java_master" basedir="." >
+    <property name="lib.dir" value="lib" />
+    <path id="test.classpath" >
+         <!-- adding the saxon jar to your classpath -->
+        <fileset dir="${lib.dir}" includes="*.jar" />
+    </path>
+    <target name="transform" >
+        <!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
+        <xslt in="/Users/vic/work/WORK/Work/Py_script/sh_selenium_java_master/test-output/testng-results.xml"
+              style="/Users/vic/work/WORK/Work/Py_script/sh_selenium_java_master/test-output/testng-results.xsl"
+              out="/Users/vic/work/WORK/Work/Py_script/sh_selenium_java_master/test-output/index1.html"
+              classpathref="test.classpath" processor="SaxonLiaison">
+            <!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
+            <param name="testNgXslt.outputDir" expression="/Users/vic/work/WORK/Work/Py_script/sh_selenium_java_master" />
+            <classpath refid="test.classpath" processor="SaxonLiaison"/>
+        </xslt>
+    </target>
+</project>

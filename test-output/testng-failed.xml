@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [wiseoper]" parallel="tests">
+  <listeners>
+    <listener class-name="util.ExtentTestNGIReporterListener"/>
+    <listener class-name="util.TestMonitor"/>
+  </listeners>
+  <test name="sqProductList(failed)" parallel="tests">
+    <parameter name="remoteIP" value=""/>
+    <parameter name="browserVersion" value=""/>
+    <parameter name="appURL" value="http://www.soomey.net/web/sq/#/passport/login"/>
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="test.SqProductList">
+        <methods>
+          <include name="SqProductList"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.SqProductList -->
+    </classes>
+  </test> <!-- sqProductList(failed) -->
+</suite> <!-- Failed suite [wiseoper] -->
