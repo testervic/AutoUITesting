@@ -49,7 +49,7 @@ public class TestBaseSetup {
             if(os.toLowerCase().startsWith("mac")){
                 System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_mac_v84");
             }else if(os.toLowerCase().startsWith("linux")){
-                System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_linux_v85");
+                System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_linux_86");
             }else if(os.toLowerCase().startsWith("win")){
                 System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_win_v85");
             }else{
