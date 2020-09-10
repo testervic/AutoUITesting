@@ -61,11 +61,12 @@ public class TestBaseSetup {
             if (Objects.equals(chrome_version, "") || Objects.equals(remoteip, "")) {
                 ChromeOptions options = new ChromeOptions();
                 //静默运行
-                String browserModel = "headless";
+                String browserModel = "--headless";
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-gpu");
                 options.addArguments(browserModel);
                 driver = new ChromeDriver(options);
+                System.out.println("options"+options);
                 driver.manage().window().maximize();
                 driver.navigate().to(appURL);
             } else {
