@@ -62,10 +62,10 @@ public class TestBaseSetup {
                 System.out.println("------------driver");
                 ChromeOptions options = new ChromeOptions();
                 //静默运行
-                String browserModel = "--headless";
-                options.addArguments("--no-sandbox");
+//                String browserModel = "--headless";
+                options.addArguments("--allow-no-sandbox-job");
                 options.addArguments("--disable-gpu");
-                options.addArguments(browserModel);
+                options.addArguments("--headless");
                 driver = new ChromeDriver(options);
                 System.out.println("options:"+options);
                 driver.manage().window().maximize();
