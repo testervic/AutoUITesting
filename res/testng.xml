@@ -4,15 +4,15 @@
         <listener class-name="util.ExtentTestNGIReporterListener"/> <!-- 测试报告-->
         <listener class-name="util.TestMonitor"/><!-- 记录日志-->
     </listeners>
-<!--    <test name="login">-->
-<!--        <parameter name="browserType" value="chrome" />-->
-<!--        <parameter name="browserVersion" value="" />-->
-<!--        <parameter name="remoteIP" value="" />-->
-<!--        <parameter name="appURL" value="http://www.soomey.net/web/sq/#/passport/login"/>-->
-<!--        <classes>-->
-<!--            <class name="test.LoginTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="login">
+        <parameter name="browserType" value="chrome" />
+        <parameter name="browserVersion" value="" />
+        <parameter name="remoteIP" value="" />
+        <parameter name="appURL" value="http://www.soomey.net/web/sq/#/passport/login"/>
+        <classes>
+            <class name="test.LoginTest"/>
+        </classes>
+    </test>
 <!--    <test name="loginFail">-->
 <!--        <parameter name="browserType" value="chrome" />-->
 <!--        <parameter name="browserVersion" value="" />-->
@@ -31,14 +31,14 @@
 <!--            <class name="test.SqProductList"/>-->
 <!--        </classes>-->
 <!--    </test>-->
-        <test name="applyContinueTest">
-            <parameter name="browserType" value="chrome" />
-            <parameter name="browserVersion" value="80.0.3987.100" />
-            <parameter name="remoteIP" value="127.0.0.1" />
-            <parameter name="appURL" value="http://www.soomey.net/web/sq/#/passport/login"/>
-            <classes>
-                <class name="test.ApplyContinueTest"/>
-            </classes>
-        </test>
+<!--        <test name="applyContinueTest">-->
+<!--            <parameter name="browserType" value="chrome" />-->
+<!--            <parameter name="browserVersion" value="80.0.3987.100" />-->
+<!--            <parameter name="remoteIP" value="127.0.0.1" />-->
+<!--            <parameter name="appURL" value="http://www.soomey.net/web/sq/#/passport/login"/>-->
+<!--            <classes>-->
+<!--                <class name="test.ApplyContinueTest"/>-->
+<!--            </classes>-->
+<!--        </test>-->
 </suite>
 
