@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-wiseoper">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-wiseoper" title="test.SqProductList" hash-for-method="SqProductList">SqProductList</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-wiseoper" title="test.ApplyContinueTest" hash-for-method="testApplyContinue">testApplyContinue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-wiseoper -->
@@ -120,16 +120,16 @@
           <div class="suite-wiseoper-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">test.SqProductList</span>
+              <span class="class-name">test.ApplyContinueTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SqProductList">
-                  </a> <!-- SqProductList -->
-                  <span class="method-name">SqProductList</span>
+                  <a name="testApplyContinue">
+                  </a> <!-- testApplyContinue -->
+                  <span class="method-name">testApplyContinue</span>
                   <div class="stack-trace">java.lang.AssertionError: 检查点不通过 expected [true] but found [false]
-	at test.SqProductList.SqProductList(SqProductList.java:43)
+	at test.ApplyContinueTest.testApplyContinue(ApplyContinueTest.java:36)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
@@ -154,15 +154,15 @@
     &lt;listener class-name=&quot;util.ExtentTestNGIReporterListener&quot;/&gt;
     &lt;listener class-name=&quot;util.TestMonitor&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;sqProductList&quot;&gt;
+  &lt;test name=&quot;applyContinueTest&quot;&gt;
     &lt;parameter name=&quot;remoteIP&quot; value=&quot;&quot;/&gt;
     &lt;parameter name=&quot;browserVersion&quot; value=&quot;&quot;/&gt;
     &lt;parameter name=&quot;appURL&quot; value=&quot;http://www.soomey.net/web/sq/#/passport/login&quot;/&gt;
     &lt;parameter name=&quot;browserType&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.SqProductList&quot;/&gt;
+      &lt;class name=&quot;test.ApplyContinueTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- sqProductList --&gt;
+  &lt;/test&gt; &lt;!-- applyContinueTest --&gt;
 &lt;/suite&gt; &lt;!-- wiseoper --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -174,7 +174,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">sqProductList (1 class)</span>
+                <span class="test-name">applyContinueTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,14 +202,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SqProductList')
-data.setCell(0, 2, 'test.SqProductList')
-data.setCell(0, 3, 22404);
+data.setCell(0, 1, 'testApplyContinue')
+data.setCell(0, 2, 'test.ApplyContinueTest')
+data.setCell(0, 3, 14203);
 window.suiteTableData['wiseoper']= { tableData: data, tableDiv: 'times-div-wiseoper'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-wiseoper">
               </div> <!-- times-div-wiseoper -->
             </div> <!-- times-div -->
@@ -235,20 +235,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.SqProductList</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.ApplyContinueTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(chrome, http://www.soomey.net/web/sq/#/passport/login, , , org.testng.TestRunner@25af5db5)</span>
+                <span class="method-name">setUp(chrome, http://www.soomey.net/web/sq/#/passport/login, , )</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">SqProductList</span>
-                <span class="method-start">11688 ms</span>
+                <span class="method-name">testApplyContinue</span>
+                <span class="method-start">7372 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34137 ms</span>
+                <span class="method-start">21608 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

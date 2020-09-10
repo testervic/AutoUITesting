@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="wiseoper" duration-ms="35068" started-at="2020-08-13T03:22:07Z" finished-at="2020-08-13T03:22:42Z">
+  <suite name="wiseoper" duration-ms="21885" started-at="2020-09-10T02:37:56Z" finished-at="2020-09-10T02:38:18Z">
     <groups>
     </groups>
-    <test name="sqProductList" duration-ms="35068" started-at="2020-08-13T03:22:07Z" finished-at="2020-08-13T03:22:42Z">
-      <class name="test.SqProductList">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:test.SqProductList@5f282abb]" name="setUp" is-config="true" duration-ms="11674" started-at="2020-08-13T11:22:07Z" finished-at="2020-08-13T11:22:19Z">
+    <test name="applyContinueTest" duration-ms="21885" started-at="2020-09-10T02:37:56Z" finished-at="2020-09-10T02:38:18Z">
+      <class name="test.ApplyContinueTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.ApplyContinueTest@5f282abb]" name="setUp" is-config="true" duration-ms="7347" started-at="2020-09-10T10:37:56Z" finished-at="2020-09-10T10:38:03Z">
           <params>
             <param index="0">
               <value>
@@ -29,16 +29,11 @@
                 <![CDATA[]]>
               </value>
             </param>
-            <param index="4">
-              <value>
-                <![CDATA[org.testng.TestRunner@25af5db5]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="SqProductList()[pri:1, instance:test.SqProductList@5f282abb]" name="SqProductList" duration-ms="22404" started-at="2020-08-13T11:22:19Z" finished-at="2020-08-13T11:22:41Z">
+        <test-method status="FAIL" signature="testApplyContinue()[pri:0, instance:test.ApplyContinueTest@5f282abb]" name="testApplyContinue" duration-ms="14203" started-at="2020-09-10T10:38:03Z" finished-at="2020-09-10T10:38:18Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[检查点不通过 expected [true] but found [false]]]>
@@ -48,7 +43,7 @@
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertTrue(Assert.java:41)
-	at test.SqProductList.SqProductList(SqProductList.java:43)
+	at test.ApplyContinueTest.testApplyContinue(ApplyContinueTest.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,12 +69,12 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SqProductList -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.SqProductList@5f282abb]" name="tearDown" is-config="true" duration-ms="828" started-at="2020-08-13T11:22:41Z" finished-at="2020-08-13T11:22:42Z">
+        </test-method> <!-- testApplyContinue -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ApplyContinueTest@5f282abb]" name="tearDown" is-config="true" duration-ms="200" started-at="2020-09-10T10:38:18Z" finished-at="2020-09-10T10:38:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.SqProductList -->
-    </test> <!-- sqProductList -->
+      </class> <!-- test.ApplyContinueTest -->
+    </test> <!-- applyContinueTest -->
   </suite> <!-- wiseoper -->
 </testng-results>

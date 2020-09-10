@@ -5,19 +5,19 @@
     <listener class-name="util.ExtentTestNGIReporterListener"/>
     <listener class-name="util.TestMonitor"/>
   </listeners>
-  <test name="sqProductList(failed)" parallel="tests">
+  <test name="applyContinueTest(failed)" parallel="tests">
     <parameter name="remoteIP" value=""/>
     <parameter name="browserVersion" value=""/>
     <parameter name="appURL" value="http://www.soomey.net/web/sq/#/passport/login"/>
     <parameter name="browserType" value="chrome"/>
     <classes>
-      <class name="test.SqProductList">
+      <class name="test.ApplyContinueTest">
         <methods>
-          <include name="SqProductList"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="testApplyContinue"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- test.SqProductList -->
+      </class> <!-- test.ApplyContinueTest -->
     </classes>
-  </test> <!-- sqProductList(failed) -->
+  </test> <!-- applyContinueTest(failed) -->
 </suite> <!-- Failed suite [wiseoper] -->

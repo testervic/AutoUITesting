@@ -44,8 +44,20 @@ public class TestBaseSetup {
         try{
             File directory = new File("res");
             String screenPath = directory.getCanonicalPath();
-            System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_mac_v84");
-            System.out.println("test1--------"+screenPath);
+
+            String os = System.getProperty("os.name");
+            if(os.toLowerCase().startsWith("mac")){
+                System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_mac_v84");
+            }else if(os.toLowerCase().startsWith("linux")){
+                System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_linux_v85");
+            }else if(os.toLowerCase().startsWith("win")){
+                System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_win_v85");
+            }else{
+                System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_win_v85");
+            }
+            System.out.println("testOS:"+os.toLowerCase());
+
+            System.out.println("chrome path--------"+screenPath);
             if (Objects.equals(chrome_version, "") || Objects.equals(remoteip, "")) {
                 ChromeOptions options = new ChromeOptions();
                 //静默运行
