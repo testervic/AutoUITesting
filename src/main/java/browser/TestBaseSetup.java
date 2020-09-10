@@ -49,7 +49,7 @@ public class TestBaseSetup {
             if(os.toLowerCase().startsWith("mac")){
                 System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_mac_v84");
             }else if(os.toLowerCase().startsWith("linux")){
-                System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_linux_v80");
+                System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_linux_v80.1");
             }else if(os.toLowerCase().startsWith("win")){
                 System.setProperty("webdriver.chrome.driver",screenPath+"/"+"chromedriver_win_v85");
             }else{
@@ -59,6 +59,7 @@ public class TestBaseSetup {
 
             System.out.println("chrome path--------"+screenPath);
             if (Objects.equals(chrome_version, "") || Objects.equals(remoteip, "")) {
+                System.out.println("------------driver");
                 ChromeOptions options = new ChromeOptions();
                 //静默运行
                 String browserModel = "--headless";
@@ -66,9 +67,10 @@ public class TestBaseSetup {
                 options.addArguments("--disable-gpu");
                 options.addArguments(browserModel);
                 driver = new ChromeDriver(options);
-                System.out.println("options"+options);
+                System.out.println("options:"+options);
                 driver.manage().window().maximize();
                 driver.navigate().to(appURL);
+                System.out.println("------------driver1");
             } else {
                 DesiredCapabilities chromeDesiredcap = DesiredCapabilities.chrome();
     //            DesiredCapabilities chromeDesiredca=new DesiredCapabilities("chrome", "48.0.2564.109", Platform.LINUX);
