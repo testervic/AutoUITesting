@@ -34,7 +34,7 @@
         <test name="applyContinueTest">
             <parameter name="browserType" value="chrome" />
             <parameter name="browserVersion" value="80.0.3987.100" />
-            <parameter name="remoteIP" value="" />
+            <parameter name="remoteIP" value="127.0.0.1" />
             <parameter name="appURL" value="http://www.soomey.net/web/sq/#/passport/login"/>
             <classes>
                 <class name="test.ApplyContinueTest"/>
