@@ -64,8 +64,8 @@ public class TestBaseSetup {
                 //静默运行
 //                String browserModel = "--headless";
                 options.addArguments("–no-sandbox");
-                options.addArguments("--disable-gpu");
-                options.addArguments("--headless");
+//                options.addArguments("--disable-gpu");
+//                options.addArguments("--headless");
                 options.addArguments("--disable-dev-shm-usage");
                 System.out.println("------------driver1");
                 driver = new ChromeDriver(options);
