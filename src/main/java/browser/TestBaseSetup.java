@@ -67,11 +67,13 @@ public class TestBaseSetup {
                 options.addArguments("--disable-gpu");
                 options.addArguments("--headless");
                 options.addArguments("--disable-dev-shm-usage");
+                System.out.println("------------driver1");
                 driver = new ChromeDriver(options);
                 System.out.println("-----options:"+options);
+                System.out.println("------------driver2");
                 driver.manage().window().maximize();
                 driver.navigate().to(appURL);
-                System.out.println("------------driver1");
+                System.out.println("------------driver3");
             } else {
                 DesiredCapabilities chromeDesiredcap = DesiredCapabilities.chrome();
     //            DesiredCapabilities chromeDesiredca=new DesiredCapabilities("chrome", "48.0.2564.109", Platform.LINUX);
